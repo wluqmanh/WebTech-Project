@@ -26,55 +26,83 @@
       </a>
     </header>
 
-    <h2>Recipe</h2>
+    <h2 style="font-size:60px;">Recipes</h2>
 
-    <select id="RecipeCategory" name="RecipeCategory" onchange="javascript:location.href = this.value;">
-      <option value="Recipe.html">All</option>
-      <option value="MainDish.html">Main Dish</option>
-      <option value="Dessert.html">Dessert</option>
-      <option value="Drink.html">Drink</option>
-      <option value="Snack.html">Snack</option>
-    </select>
-
-    <div class="FirstRecipeBox">
-      <div class="FirstRecipePicture">
-
-      </div>
-      <div class="FirstRecipeDescription">
-
-      </div>
-      <div class="FirstRecipeLink">
-
-      </div>
+    <div class="RecipeCategory">
+      Category:
+      <select id="RecipeCategory" name="RecipeCategory" onchange="javascript:location.href = this.value;">
+        <option value="Recipe.html">All</option>
+        <option value="MainDish.html">Main Dish</option>
+        <option value="Dessert.html">Dessert</option>
+        <option value="Drink.html">Drink</option>
+        <option value="Snack.html">Snack</option>
+      </select>
     </div>
 
-    <div class="SecondRecipeBox">
-      <br><br>
-      <img id ="SecondRecipePicture" src="https://www.jessicagavin.com/wp-content/uploads/2020/05/french-toast-11-1200.jpg" alt="French Toast">
-      <div class="SecondRecipeDescription">
+    <br><br>
+    <div class="RecipeBox">
+      <div class="clearfix">
+      <img id ="OddRecipePicture" src="https://www.jessicagavin.com/wp-content/uploads/2020/05/french-toast-11-1200.jpg" alt="French Toast">
         <h3>French Toast</h3>
         <p>French toast is a dish made of sliced bread soaked in eggs and typically milk, then pan fried.
           A great choice for breakfast when you want something to fill your stomach but too lazy to cook. </p>
-      </div>
-      <div class="SecondRecipeLink">
-        <a href="FrenchToast.html">Read more</a>
+          <br><br>
+        <a class="right" href="FrenchToast.html" style="align:right">Read more</a>
       </div>
     </div>
 
-    <svg>
-      <rect width=100% height="5" x="0" y="0">
-    </svg>
-
-    <div class="ThirdRecipeBox">
-      <div class="ThirdRecipePicture">
-
+    <div class="RecipeBox">
+      <br>
+      <div class="clearfix">
+      <img id ="EvenRecipePicture" src="https://www.jessicagavin.com/wp-content/uploads/2020/05/french-toast-11-1200.jpg" alt="French Toast">
+        <h3>French Toast</h3>
+        <p>French toast is a dish made of sliced bread soaked in eggs and typically milk, then pan fried.
+          A great choice for breakfast when you want something to fill your stomach but too lazy to cook. </p>
+          <br><br>
+        <a class="left" href="FrenchToast.html" style="align:right">Read more</a>
       </div>
-      <div class="ThirdRecipeDescription">
+    </div>
 
+    <div class="RecipeBox">
+      <br>
+      <div class="clearfix">
+      <img id ="OddRecipePicture" src="https://www.jessicagavin.com/wp-content/uploads/2020/05/french-toast-11-1200.jpg" alt="French Toast">
+        <h3>French Toast</h3>
+        <p>French toast is a dish made of sliced bread soaked in eggs and typically milk, then pan fried.
+          A great choice for breakfast when you want something to fill your stomach but too lazy to cook. </p>
+          <br><br>
+        <a class="right" href="FrenchToast.html" style="align:right">Read more</a>
       </div>
-      <div class="ThirdRecipeLink">
+    </div>
 
+    <div class="RecipeBox">
+      <br>
+      <div class="clearfix">
+      <img id ="EvenRecipePicture" src="https://www.jessicagavin.com/wp-content/uploads/2020/05/french-toast-11-1200.jpg" alt="French Toast">
+        <h3>French Toast</h3>
+        <p>French toast is a dish made of sliced bread soaked in eggs and typically milk, then pan fried.
+          A great choice for breakfast when you want something to fill your stomach but too lazy to cook. </p>
+          <br><br>
+        <a class="left" href="FrenchToast.html" style="align:right">Read more</a>
       </div>
+    </div>
+
+    <div class="RecipeBox">
+      <br>
+      <div class="clearfix">
+      <img id ="OddRecipePicture" src="https://www.jessicagavin.com/wp-content/uploads/2020/05/french-toast-11-1200.jpg" alt="French Toast">
+        <h3>French Toast</h3>
+        <p>French toast is a dish made of sliced bread soaked in eggs and typically milk, then pan fried.
+          A great choice for breakfast when you want something to fill your stomach but too lazy to cook. </p>
+          <br><br>
+        <a class="right" href="FrenchToast.html" style="align:right">Read more</a>
+      </div>
+    </div>
+
+    <br><br><br>
+    <div class="submitrecipe">
+      <p>Have your own recipe? Submit to us now!!!</p>
+      <button type="button" name="button" onclick="window.location.href='submitrecipe.html'">Submit Recipe</button>
     </div>
 
     <footer>
@@ -95,3 +123,4 @@
 
   </body>
 </html>
+
