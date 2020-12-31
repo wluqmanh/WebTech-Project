@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dessert</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $(window).scroll( function(){
+        $('.Recipe').each( function(i){
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if( bottom_of_window > bottom_of_object ){
+                $(this).animate({'opacity':'1'},500);
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <a href="#">
+        <h1 class="title">Pecal's Cottage</h1>
+      </a>
+      <svg>
+        <rect width="350" height="10" x="0" y="0">
+      </svg>
+      <nav>
+        <ul>
+          <li class="nav-bar"><a href="#">About</a></li>
+          <li class="nav-bar"><a href="#">Shop |</a></li>
+          <li class="nav-bar"><a href="#">User |</a></li>
+          <li class="nav-bar"><a href="#">Recipes |</a></li>
+        </ul>
+      </nav>
+      <a href="#">
+        <img id="logo" src="https://assets.stickpng.com/images/5888ca78bc2fc2ef3a1860da.png" alt="Logo">
+      </a>
+    </header>
+
+    <h2 style="font-size:60px">Dessert</h2>
+
+    <div class="RecipeCategory">
+      Category:
+      <select id="RecipeCategory" name="RecipeCategory" onchange="javascript:location.href = this.value;">
+        <option value="Dessert.html">Dessert</option>
+        <option value="Recipe.html">All</option>
+        <option value="MainDish.html">Main Dish</option>
+        <option value="Drink.html">Drink</option>
+        <option value="Snack.html">Snack</option>
+      </select>
+    </div>
+
+    <br><br>
+    <div class="container">
+    <div class="Recipe">
+      <br>
+      <div class="clearfix">
+      <img id ="OddRecipePicture" src="https://bidadari.my/wp-content/uploads/17200976_10212581226584827_1787170527055713460_n.jpg" alt="Fried Ice Cream">
+        <h3>Fried Ice Cream"</h3>
+        <p>Stop being curious and lets make a fried ice cream!! The name is a bit crazy but wait until you take the first bite,
+        you might ended blow your mind. </p>
+          <br><br>
+        <a class="right" href="FriedIceCream.html" style="align:right">Read more</a>
+      </div>
+    </div>
+
+    <div class="Recipe">
+      <br>
+      <div class="clearfix">
+      <img id ="EvenRecipePicture" src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/easy-chocolate-molten-cakes-37a25eb.jpg?quality=90&webp=true&resize=300,272" alt="Chocolate Molten Cake">
+        <h3>Chocolate Molten Cake</h3>
+        <p>Iced tea with tapioca pearls that are sucked from a large straw are perhaps Taiwan’s most famous culinary export.
+          These bouncy, chewy balls are fun to munch on, much like chewing gum. </p>
+          <br><br>
+        <a class="left" href="ChocolateMoltenCake.html" style="align:right">Read more</a>
+      </div>
+    </div>
+    </div>
+
+    <br><br><br>
+    <div class="submitrecipe">
+      <p>Have your own recipe? Submit to us now!!!</p>
+      <button type="button" name="button" onclick="window.location.href='submitrecipe.html'">Submit Recipe</button>
+    </div>
+
+    <footer>
+      <div class="footer-left">
+        <br>Follow Us<br>
+        <a href="#"><img class="socials" src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c521.png" alt="Instagram"></a>
+        <a href="#"><img class="socials" src="https://assets.stickpng.com/thumbs/584ac2d03ac3a570f94a666d.png" alt="Facebook"></a>
+        <a href="#"><img class="socials" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" alt="Twitter"></a>
+      </div>
+      <div class="footer-right">
+        <br>
+        <form class="subscribe-box" action="#" method="post">
+          <input type="text" name="search" placeholder="Enter your email"><br>
+          <button type="submit" name="button">Subscribe</button>
+        </form>
+      </div>
+    </footer>
+
+  </body>
+</html>
