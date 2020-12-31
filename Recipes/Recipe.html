@@ -4,6 +4,20 @@
     <meta charset="utf-8">
     <title>Recipe</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $(window).scroll( function(){
+        $('.Recipe').each( function(i){
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if( bottom_of_window > bottom_of_object ){
+                $(this).animate({'opacity':'1'},500);
+            }
+          });
+        });
+      });
+    </script>
   </head>
   <body>
     <header>
@@ -26,7 +40,7 @@
       </a>
     </header>
 
-    <h2 style="font-size:60px;">Recipes</h2>
+    <h2 style="font-size:60px">Recipes</h2>
 
     <div class="RecipeCategory">
       Category:
@@ -40,62 +54,99 @@
     </div>
 
     <br><br>
-    <div class="RecipeBox">
+    <div class="Recipe">
       <div class="clearfix">
       <img id ="OddRecipePicture" src="https://www.jessicagavin.com/wp-content/uploads/2020/05/french-toast-11-1200.jpg" alt="French Toast">
         <h3>French Toast</h3>
         <p>French toast is a dish made of sliced bread soaked in eggs and typically milk, then pan fried.
           A great choice for breakfast when you want something to fill your stomach but too lazy to cook. </p>
           <br><br>
-        <a class="right" href="FrenchToast.html" style="align:right">Read more</a>
+        <a class="right" href="FrenchToast.html">Read more</a>
       </div>
     </div>
 
-    <div class="RecipeBox">
+    <div class="Recipe">
       <br>
       <div class="clearfix">
-      <img id ="EvenRecipePicture" src="https://www.jessicagavin.com/wp-content/uploads/2020/05/french-toast-11-1200.jpg" alt="French Toast">
-        <h3>French Toast</h3>
-        <p>French toast is a dish made of sliced bread soaked in eggs and typically milk, then pan fried.
-          A great choice for breakfast when you want something to fill your stomach but too lazy to cook. </p>
+      <img id ="EvenRecipePicture" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/20191219-seo-steak-eggs-delish-ehg-8988-jpg-1579900348.jpg?crop=0.583xw:0.875xh;0.196xw,0.0230xh&resize=768:*" alt="Steak & Eggs">
+        <h3>Steak & Eggs</h3>
+        <p>Looking for an indulgent, protein-packed breakfast? You're in the right place.
+          This super savory dish is delicious with roasted potatoes or hash browns, but if you're on a low-carb kick,
+          try it with cabbage hash browns instead! </p>
           <br><br>
-        <a class="left" href="FrenchToast.html" style="align:right">Read more</a>
+        <a class="left" href="Steak&Eggs.html">Read more</a>
       </div>
     </div>
 
-    <div class="RecipeBox">
+    <div class="Recipe">
       <br>
       <div class="clearfix">
-      <img id ="OddRecipePicture" src="https://www.jessicagavin.com/wp-content/uploads/2020/05/french-toast-11-1200.jpg" alt="French Toast">
-        <h3>French Toast</h3>
-        <p>French toast is a dish made of sliced bread soaked in eggs and typically milk, then pan fried.
-          A great choice for breakfast when you want something to fill your stomach but too lazy to cook. </p>
+      <img id ="OddRecipePicture" src="https://tradevistas.org/wp-content/uploads/Dalgona-Coffee.jpg" alt="Dalgona Coffee">
+        <h3>Dalgona Coffee</h3>
+        <p>Feel bored at home? If you've got instant coffee, sugar, and water on hand, you can might want to make this simple yet delicious drink. </p>
           <br><br>
-        <a class="right" href="FrenchToast.html" style="align:right">Read more</a>
+        <a class="right" href="DalgonaCoffee.html">Read more</a>
       </div>
     </div>
 
-    <div class="RecipeBox">
+    <div class="Recipe">
       <br>
       <div class="clearfix">
-      <img id ="EvenRecipePicture" src="https://www.jessicagavin.com/wp-content/uploads/2020/05/french-toast-11-1200.jpg" alt="French Toast">
-        <h3>French Toast</h3>
-        <p>French toast is a dish made of sliced bread soaked in eggs and typically milk, then pan fried.
-          A great choice for breakfast when you want something to fill your stomach but too lazy to cook. </p>
-          <br><br>
-        <a class="left" href="FrenchToast.html" style="align:right">Read more</a>
+        <img id ="EvenRecipePicture" src="https://46j6bj2j51papmb0q1wvc8as-wpengine.netdna-ssl.com/wp-content/uploads/2018/01/Apple-Donuts-1024x819.jpg" alt="Donut Apples">
+          <h3>Donut Apples</h3>
+          <p>So these don't exactly taste like a donut, but they are just as fun!
+            Cut out the gluten and use apples with a cream cheese spread for a better-for-you
+            treat we can all feel good about! We won't blame you if you want to sneak in a real
+            yeasted donut every now and then though. </p>
+            <br><br>
+          <a class="left" href="DonutApples.html">Read more</a>
       </div>
     </div>
 
-    <div class="RecipeBox">
+    <div class="Recipe">
+      <div class="clearfix">
+      <img id ="OddRecipePicture" src="https://www.ouichefnetwork.com/images/old/6a01156ed76240970c01538e65d828970b-pi.jpg" alt="Sweet Potato Chips">
+        <h3>Sweet Potato Chips</h3>
+        <p>Want to have something to eat during study or working at home? Grab some sweet potatoes
+          and lets make our own chips to fulfill mouth desire. </p>
+          <br><br>
+        <a class="right" href="SweetPotatoChips.html">Read more</a>
+      </div>
+    </div>
+
+    <div class="Recipe">
       <br>
       <div class="clearfix">
-      <img id ="OddRecipePicture" src="https://www.jessicagavin.com/wp-content/uploads/2020/05/french-toast-11-1200.jpg" alt="French Toast">
-        <h3>French Toast</h3>
-        <p>French toast is a dish made of sliced bread soaked in eggs and typically milk, then pan fried.
-          A great choice for breakfast when you want something to fill your stomach but too lazy to cook. </p>
+      <img id ="EvenRecipePicture" src="https://i.pinimg.com/originals/09/b8/45/09b8451eec6ac715a0e628288a2adb8e.jpg" alt="Boba Tea">
+        <h3>Bubble Tea (Boba)</h3>
+        <p>Iced tea with tapioca pearls that are sucked from a large straw are perhaps Taiwan’s most famous culinary export.
+          These bouncy, chewy balls are fun to munch on, much like chewing gum. </p>
           <br><br>
-        <a class="right" href="FrenchToast.html" style="align:right">Read more</a>
+        <a class="left" href="BubbleTea.html">Read more</a>
+      </div>
+    </div>
+
+    <div class="Recipe">
+      <br>
+      <div class="clearfix">
+      <img id ="OddRecipePicture" src="https://bidadari.my/wp-content/uploads/17200976_10212581226584827_1787170527055713460_n.jpg" alt="Fried Ice Cream">
+        <h3>Fried Ice Cream"</h3>
+        <p>Stop being curious and lets make a fried ice cream!! The name is a bit crazy but wait until you take the first bite,
+        you might ended blow your mind. </p>
+          <br><br>
+        <a class="right" href="FriedIceCream.html" style="align:right">Read more</a>
+      </div>
+    </div>
+
+    <div class="Recipe">
+      <br>
+      <div class="clearfix">
+      <img id ="EvenRecipePicture" src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/easy-chocolate-molten-cakes-37a25eb.jpg?quality=90&webp=true&resize=300,272" alt="Chocolate Molten Cake">
+        <h3>Chocolate Molten Cake</h3>
+        <p>Iced tea with tapioca pearls that are sucked from a large straw are perhaps Taiwan’s most famous culinary export.
+          These bouncy, chewy balls are fun to munch on, much like chewing gum. </p>
+          <br><br>
+        <a class="left" href="ChocolateMoltenCake.html">Read more</a>
       </div>
     </div>
 
