@@ -1,5 +1,5 @@
 * {
-  border: 0.3px solid black;
+  /* border: 0.3px solid black; */
 }
 
 body {
@@ -141,7 +141,7 @@ form {
   border-style: solid;
   border-color: #222020;
   color: #222020;
-  width: 193px;
+  width: 50%;
   height: 30px;
 }
 
@@ -151,7 +151,7 @@ form {
   border-style: solid;
   border-color: #222020;
   color: #222020;
-  width: 300px;
+  width: 50%;
   height: 30px;
 
 }
