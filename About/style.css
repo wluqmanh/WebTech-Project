@@ -130,9 +130,11 @@ p{
 
 form {
   padding: 10px;
-  margin: 10px;
   margin: auto;
   width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .email {
@@ -141,8 +143,11 @@ form {
   border-style: solid;
   border-color: #222020;
   color: #222020;
-  width: 20%;
+  width: 30%;
   height: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .subject {
@@ -151,9 +156,11 @@ form {
   border-style: solid;
   border-color: #222020;
   color: #222020;
-  width: 30%;
+  width: 50%;
   height: 30px;
-
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .submitform{
@@ -163,6 +170,9 @@ form {
   border-radius: 5px;
   width: 150px;
   height: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .submitform:hover{
