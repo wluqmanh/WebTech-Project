@@ -296,3 +296,48 @@ footer button {
   border-top: 1px solid #DDD;
   text-align: center;
   color: #777;
+
+  .recipeform{
+  position: relative;
+  margin: auto;
+  width: 70%;
+  background-color: #E1E1E1;
+  border-radius: 10px;
+  padding: 20px;
+
+
+}
+
+.submitbutton{
+  display: block;
+  margin: auto;
+  padding-top: 2px;
+  padding-right: 15px;
+  padding-bottom: 2px;
+  padding-left: 15px;
+  font-size: 20px;
+  background-color: #B61313;
+  color: white;
+  border-radius: 12px;
+  }
+
+  #recipeform > label{
+    width: 25%;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  #recipeform > input{
+    width: 50%;
+    align: center;
+  }
+
+  #recipeform > textarea{
+    width: 99%
+  }
+
+  #div1 > input {
+    margin-left: 25.6%;
+    margin-bottom: 10px;
+    width: 50%
+  }
