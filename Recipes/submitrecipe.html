@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./style.css">
     <script type="text/javascript">
     function showfield(name){
-      if(name=='other')document.getElementById('div1').innerHTML='Other: <input type="text" name="other" />';
+      if(name=='other')document.getElementById('div1').innerHTML='<input type="text" name="other" placeholder="Please Specify" required/>';
       else document.getElementById('div1').innerHTML='';
     }
     </script>
@@ -40,11 +40,11 @@
     <div class="recipeform">
         <form id="recipeform" action="mailto:pecalcottage@gmail.com?subject=New_Recipe_Request" method="post" enctype="text/plain">
           <label for="name">Name:</label>
-          <input type="text" name="name"><br>
+          <input type="text" name="name" required><br>
           <label for="recipename">Recipe Name: </label>
-          <input type="text" name="recipename"><br>
+          <input type="text" name="recipename" required><br>
           <label for="recipecategory">Category: </label>
-          <select id="selectrecipecategory" name="selectrecipecategory" form="recipeform" onchange="showfield(this.options[this.selectedIndex].value)">
+          <select id="selectrecipecategory" name="selectrecipecategory" form="recipeform" onchange="showfield(this.options[this.selectedIndex].value)" required>
             <option value="">Select</option>
             <option value="main dish">Main Dish</option>
             <option value="dessert">Dessert</option>
@@ -54,10 +54,10 @@
           </select>
           <div id="div1"></div>
           <label for="size">Number of servings: </label>
-          <input type="text" name="size"> <br>
+          <input type="number" name="size" required> <br>
           <label for="instruction">Recipe step (Instruction) :</label> <br>
-          <textarea name="instruction" rows="8" cols="80"></textarea>
-          <input type="submit">
+          <textarea name="instruction" rows="8" cols="80" required></textarea><br>
+          <button class="submitbutton" type="submit">submit </button>
         </form>
     </div>
 
