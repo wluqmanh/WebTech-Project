@@ -1,9 +1,11 @@
 * {
   /* border: 0.1px solid black; */
 }
+
 .title {
-  width: 300px;
+  width: 330px;
 }
+
 nav {
   margin-left: 750px;
   margin-right: 0px;
@@ -23,23 +25,22 @@ nav {
   text-shadow: -1px 1px 2px #000, 1px 1px 2px #000, 1px -1px 0 #000, -1px -1px 0 #000;
 }
 
-
-input{
+input {
   width: 200px;
 }
-
-
 
 header {
   background-color: #222020;
   padding-bottom: 80px;
 }
+
 footer {
   background-color: #222020;
   color: white;
   margin-top: 500px;
 }
-.header-right{
+
+.header-right {
   width: 15%;
   float: right;
   display: block;
@@ -47,21 +48,24 @@ footer {
   text-decoration: none;
   margin-top: 50px;
 }
-.logout_p{
+
+.logout_p {
   color: white;
   margin-left: 10px;
 }
-#logout{
+
+#logout {
   width: 40px;
   height: 40px;
 }
+
 body {
   width: 90%;
   max-width: 1080px;
   margin: 0 auto;
   font-family: 'Poppins', sans-serif;
-
 }
+
 header svg {
   fill: #B61313;
   stroke: rgb(0, 0, 0);
@@ -69,16 +73,14 @@ header svg {
   width: 230px;
   height: 10px;
   float: right;
-  margin-right: 70px; // 70
+  margin-right: 80px; // 70
   text-shadow: -1px 1px 2px #000, 1px 1px 2px #000, 1px -1px 0 #000, -1px -1px 0 #000;
 }
+
 #logo {
   width: 90px;
   height: 90px;
-  margin-left: 130px;
-}
-.title {
-  width: 200px;
+  margin-left: 200px;
 }
 
 header h1 {
@@ -90,6 +92,7 @@ header h1 {
   outline-color: black;
   text-shadow: -1px 1px 2px #000, 1px 1px 2px #000, 1px -1px 0 #000, -1px -1px 0 #000;
 }
+
 nav a {
   display: block;
   color: white;
@@ -97,10 +100,13 @@ nav a {
   text-decoration: none;
 }
 
+a {text-decoration: none;}
+
 nav ul {
   list-style-type: none;
   padding: 0px;
 }
+
 footer {
   padding-bottom: 80px;
 }
@@ -135,11 +141,10 @@ footer button {
   border: none;
   background-color: #B61313;
   color: white;
-
 }
 
 /*pecal content*/
-main div{
+main div {
   border: 6px solid #B61313;
   display: block;
   padding: 5px;
@@ -150,7 +155,8 @@ main div{
   margin: 240px;
   width: 500px;
 }
-.logindiv{
+
+.logindiv {
   width: 300px;
   text-align: left;
   margin-left: auto;
@@ -162,12 +168,12 @@ main div{
   border-spacing: 2px;
 }
 
-main h2{
+main h2 {
   text-align: center;
   padding: 2px;
+}
 
-  }
-main button{
+main button {
   width: 122px;
   border: none;
   background-color: #B61313;
@@ -180,7 +186,6 @@ main button{
   right: 0;
   margin: auto;
   margin-bottom: 20px;
-
   padding: 10px;
   margin-top: 20px;
 }

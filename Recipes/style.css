@@ -33,13 +33,13 @@ nav ul {
 
 header {
   background-color: #222020;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
 }
 
 #logo {
   width: 90px;
   height: 90px;
-  margin-left: 130px;
+  margin-left: 200px;
 }
 
 .nav-bar {
@@ -58,13 +58,13 @@ header svg {
   width: 230px;
   height: 10px;
   float: right;
-  margin-right: 70px; // 70
+  margin-right: 80px; // 70
   text-shadow: -1px 1px 2px #000, 1px 1px 2px #000, 1px -1px 0 #000, -1px -1px 0 #000;
 }
 }
 
 .title {
-  width: 300px;
+  width: 330px;
 }
 
 header h1 {
@@ -108,7 +108,7 @@ main img {
 footer {
   background-color: #222020;
   color: white;
-  margin-top: 500px;
+  margin-top: 100px;
 }
 
 .search-bar {
@@ -198,65 +198,65 @@ footer button {
   color: white;
 }
 
-.RecipeCategory
- {
-   position: absolute;
-   right: 180px;
- }
+.RecipeCategory {
+  position: absolute;
+  right: 180px;
+}
 
- .clearfix::after {
-   content: "";
-   clear: both;
-   display: table;
-   overflow: hidden;
- }
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+  overflow: hidden;
+}
 
- .right {
-    position: absolute;
-    right: 180px;
-    width: 80px;
-    border: 3px solid #B61313;
-    padding: 10px;
-  }
+.right {
+  position: absolute;
+  right: 180px;
+  width: 100px;
+  border: 3px solid #B61313;
+  padding: 10px;
+}
 
 .left {
-    position: absolute;
-    width: 80px;
-    border: 3px solid #B61313;
-    padding: 10px;
-  }
+  position: absolute;
+  width: 100px;
+  border: 3px solid #B61313;
+  padding: 10px;
+}
 
- .Recipe{
-   position: static;
-   padding: 5px;
-   border-bottom-style: solid;
-   border-color: #222020;
-   height: 260px;
-   width: auto;
-   opacity: 0;
- }
+.Recipe {
+  position: static;
+  padding: 5px;
+  border-bottom-style: solid;
+  border-color: #222020;
+  height: 260px;
+  width: auto;
+  opacity: 0;
+  padding-bottom: 30px;
+}
 
- #EvenRecipePicture{
-   float: right;
-   width: 200px;
-   height: 200px;
-   padding-left: 10px;
- }
+#EvenRecipePicture {
+  float: right;
+  width: 200px;
+  height: 200px;
+  padding-left: 10px;
+}
 
-#OddRecipePicture{
+#OddRecipePicture {
   float: left;
   width: 200px;
   height: 200px;
   padding-right: 10px;
 }
 
-.submitrecipe{
+.submitrecipe {
   margin: auto;
   width: 50%;
   text-align: center;
 }
 
-.submitrecipe > button {
+.submitrecipe>button {
   padding-top: 5px;
   padding-right: 15px;
   padding-bottom: 5px;
@@ -267,76 +267,75 @@ footer button {
   border-radius: 12px;
 }
 
-.RecipePicture{
+.RecipePicture {
   float: left;
   width: 33.33%;
-  padding:10px;
+  padding: 10px;
   margin-top: 50px;
   box-sizing: border-box;
 }
 
-.RecipePicture > img {
-  width:100%;
-  height:300px;
+.RecipePicture>img {
+  width: 100%;
+  height: 300px;
 }
 
-.RecipeTitle > h2 {
+.RecipeTitle>h2 {
   text-align: center;
   font-size: 40px;
   margin-bottom: -10px;
 }
 
-.RecipeTitle > p {
+.RecipeTitle>p {
   text-align: center;
 }
 
 .page-load-status {
-  display: none; /* hidden by default */
+  display: none;
+  /* hidden by default */
   padding-top: 20px;
   border-top: 1px solid #DDD;
   text-align: center;
   color: #777;
 
-  .recipeform{
-  position: relative;
-  margin: auto;
-  width: 70%;
-  background-color: #E1E1E1;
-  border-radius: 10px;
-  padding: 20px;
-
-
-}
-
-.submitbutton{
-  display: block;
-  margin: auto;
-  padding-top: 2px;
-  padding-right: 15px;
-  padding-bottom: 2px;
-  padding-left: 15px;
-  font-size: 20px;
-  background-color: #B61313;
-  color: white;
-  border-radius: 12px;
+  .recipeform {
+    position: relative;
+    margin: auto;
+    width: 70%;
+    background-color: #E1E1E1;
+    border-radius: 10px;
+    padding: 20px;
   }
 
-  #recipeform > label{
+  .submitbutton {
+    display: block;
+    margin: auto;
+    padding-top: 2px;
+    padding-right: 15px;
+    padding-bottom: 2px;
+    padding-left: 15px;
+    font-size: 20px;
+    background-color: #B61313;
+    color: white;
+    border-radius: 12px;
+  }
+
+  #recipeform>label {
     width: 25%;
     display: inline-block;
     margin-bottom: 10px;
   }
 
-  #recipeform > input{
+  #recipeform>input {
     width: 50%;
     align: center;
   }
 
-  #recipeform > textarea{
+  #recipeform>textarea {
     width: 99%
   }
 
-  #div1 > input {
+  #div1>input {
     margin-left: 25.6%;
     margin-bottom: 10px;
     width: 50%

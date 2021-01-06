@@ -1,105 +1,113 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Snack</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-    $(document).ready(function(){
-      $(window).scroll( function(){
-        $('.Recipe').each( function(i){
-            var bottom_of_object = $(this).position().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            if( bottom_of_window > bottom_of_object ){
-                $(this).animate({'opacity':'1'},500);
-            }
-          });
+
+<head>
+  <meta charset="utf-8">
+  <title>Snack</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(window).scroll(function() {
+        $('.Recipe').each(function(i) {
+          var bottom_of_object = $(this).position().top + $(this).outerHeight();
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+          if (bottom_of_window > bottom_of_object) {
+            $(this).animate({
+              'opacity': '1'
+            }, 500);
+          }
         });
       });
-    </script>
-  </head>
-  <body>
-    <header>
-      <a href="#">
-        <h1 class="title">Pecal's Cottage</h1>
-      </a>
-      <svg>
-        <rect width="350" height="10" x="0" y="0">
-      </svg>
-      <nav>
-        <ul>
-          <li class="nav-bar"><a href="#">About</a></li>
-          <li class="nav-bar"><a href="#">Shop |</a></li>
-          <li class="nav-bar"><a href="#">User |</a></li>
-          <li class="nav-bar"><a href="#">Recipes |</a></li>
-        </ul>
-      </nav>
-      <a href="#">
-        <img id="logo" src="https://assets.stickpng.com/images/5888ca78bc2fc2ef3a1860da.png" alt="Logo">
-      </a>
-    </header>
+    });
+  </script>
+</head>
 
-    <h2 style="font-size:60px">Snack</h2>
+<body>
+  <header>
+    <a href="../Home/home.html">
+      <h1 class="title">Pecal's Cottage</h1>
+    </a>
+    <svg>
+      <rect width="350" height="10" x="0" y="0">
+    </svg>
+    <nav>
+      <ul>
+        <li class="nav-bar"><a href="../About/about.html">About</a></li>
+        <li class="nav-bar"><a href="../Shop/shop.html">Shop |</a></li>
+        <li class="nav-bar"><a href="../Register/Login.html">User |</a></li>
+        <li class="nav-bar"><a href="../Recipes/Recipe.html">Recipes |</a></li>
+      </ul>
+    </nav>
+    <a href="../Home/home.html">
+      <img id="logo" src="../Home/logo.png" alt="Logo">
+    </a>
+  </header>
 
-    <div class="RecipeCategory">
-      Category:
-      <select id="RecipeCategory" name="RecipeCategory" onchange="javascript:location.href = this.value;">
-        <option value="Snack.html">Snack</option>
-        <option value="Recipe.html">All</option>
-        <option value="MainDish.html">Main Dish</option>
-        <option value="Dessert.html">Dessert</option>
-        <option value="Drink.html">Drink</option>
-      </select>
+  <h2 style="font-size:60px">Snack</h2>
+
+  <div class="RecipeCategory">
+    Category:
+    <select id="RecipeCategory" name="RecipeCategory" onchange="javascript:location.href = this.value;">
+      <option value="Snack.html">Snack</option>
+      <option value="Recipe.html">All</option>
+      <option value="MainDish.html">Main Dish</option>
+      <option value="Dessert.html">Dessert</option>
+      <option value="Drink.html">Drink</option>
+    </select>
+  </div>
+
+  <br><br>
+  <div class="Recipe">
+    <div class="clearfix">
+      <img id="OddRecipePicture" src="https://www.ouichefnetwork.com/images/old/6a01156ed76240970c01538e65d828970b-pi.jpg" alt="Sweet Potato Chips">
+      <h3>Sweet Potato Chips</h3>
+      <p>Want to have something to eat during study or working at home? Grab some sweet potatoes
+        and lets make our own chips to fulfill mouth desire. </p>
+      <br><br>
+      <a class="right" href="SweetPotatoChips.html" style="align:right">Read more</a>
     </div>
+  </div>
 
-    <br><br>
-    <div class="Recipe">
-      <div class="clearfix">
-      <img id ="OddRecipePicture" src="https://www.ouichefnetwork.com/images/old/6a01156ed76240970c01538e65d828970b-pi.jpg" alt="Sweet Potato Chips">
-        <h3>Sweet Potato Chips</h3>
-        <p>Want to have something to eat during study or working at home? Grab some sweet potatoes
-          and lets make our own chips to fulfill mouth desire. </p>
-          <br><br>
-        <a class="right" href="SweetPotatoChips.html" style="align:right">Read more</a>
-      </div>
+  <div class="Recipe">
+    <br>
+    <div class="clearfix">
+      <img id="EvenRecipePicture" src="https://46j6bj2j51papmb0q1wvc8as-wpengine.netdna-ssl.com/wp-content/uploads/2018/01/Apple-Donuts-1024x819.jpg" alt="French Toast">
+      <h3>Donut Apples</h3>
+      <p>So these don't exactly taste like a donut, but they are just as fun!
+        Cut out the gluten and use apples with a cream cheese spread for a better-for-you
+        treat we can all feel good about! We won't blame you if you want to sneak in a real
+        yeasted donut every now and then though. </p>
+      <br><br>
+      <a class="left" href="DonutApples.html" style="align:right">Read more</a>
     </div>
+  </div>
 
-    <div class="Recipe">
+  <br><br><br>
+  <div class="submitrecipe">
+    <p>Have your own recipe? Submit to us now!!!</p>
+    <button type="button" name="button" onclick="window.location.href='submitrecipe.html'">Submit Recipe</button>
+  </div>
+
+  <footer>
+    <div class="footer-left">
+      <br>Follow Us<br>
+      <a href="#"><img class="socials" src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c521.png" alt="Instagram"></a>
+      <a href="#"><img class="socials" src="https://assets.stickpng.com/thumbs/584ac2d03ac3a570f94a666d.png" alt="Facebook"></a>
+      <a href="#"><img class="socials" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" alt="Twitter"></a>
+    </div>
+    <div class="footer-right">
       <br>
-      <div class="clearfix">
-        <img id ="EvenRecipePicture" src="https://46j6bj2j51papmb0q1wvc8as-wpengine.netdna-ssl.com/wp-content/uploads/2018/01/Apple-Donuts-1024x819.jpg" alt="French Toast">
-          <h3>Donut Apples</h3>
-          <p>So these don't exactly taste like a donut, but they are just as fun!
-            Cut out the gluten and use apples with a cream cheese spread for a better-for-you
-            treat we can all feel good about! We won't blame you if you want to sneak in a real
-            yeasted donut every now and then though. </p>
-            <br><br>
-          <a class="left" href="DonutApples.html" style="align:right">Read more</a>
-      </div>
+      <form class="subscribe-box" action="#" method="post">
+        <input type="text" name="search" placeholder="Enter your email"><br>
+        <button type="submit" name="button">Subscribe</button>
+      </form>
     </div>
+    <br>
+  </footer>
 
-    <br><br><br>
-    <div class="submitrecipe">
-      <p>Have your own recipe? Submit to us now!!!</p>
-      <button type="button" name="button" onclick="window.location.href='submitrecipe.html'">Submit Recipe</button>
-    </div>
+</body>
 
-    <footer>
-      <div class="footer-left">
-        <br>Follow Us<br>
-        <a href="#"><img class="socials" src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c521.png" alt="Instagram"></a>
-        <a href="#"><img class="socials" src="https://assets.stickpng.com/thumbs/584ac2d03ac3a570f94a666d.png" alt="Facebook"></a>
-        <a href="#"><img class="socials" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" alt="Twitter"></a>
-      </div>
-      <div class="footer-right">
-        <br>
-        <form class="subscribe-box" action="#" method="post">
-          <input type="text" name="search" placeholder="Enter your email"><br>
-          <button type="submit" name="button">Subscribe</button>
-        </form>
-      </div>
-    </footer>
-
-  </body>
 </html>
