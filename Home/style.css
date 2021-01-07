@@ -119,6 +119,10 @@ main input {
   padding-bottom: 5px;
 }
 
+main {
+  padding-bottom: 200px;
+}
+
 main button {
   background-color: #B61313;
   border-radius: 50%;
