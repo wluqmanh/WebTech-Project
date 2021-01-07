@@ -3,10 +3,10 @@
 }
 
 body {
-  width: 90%;
-  max-width: 1080px;
   margin: 0 auto;
   font-family: 'Poppins', sans-serif;
+  width: 90%;
+  max-width: 1080px;
 }
 
 nav {
@@ -53,17 +53,17 @@ header svg {
 
 header {
   background-color: #222020;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
 }
 
 #logo {
   width: 90px;
   height: 90px;
-  margin-left: 130px;
+  margin-left: 200px;
 }
 
 .title {
-  width: 300px;
+  width: 330px;
 }
 
 header h1 {
