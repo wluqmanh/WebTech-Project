@@ -297,6 +297,7 @@ footer button {
   border-top: 1px solid #DDD;
   text-align: center;
   color: #777;
+}
 
   .recipeform {
     position: relative;
@@ -347,3 +348,4 @@ footer button {
     margin-right: auto;
     width:50%;
     text-align: center;
+}
