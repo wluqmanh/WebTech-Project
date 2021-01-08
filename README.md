@@ -1,6 +1,4 @@
-# Group 2 (Pecal's Cottage)
-
-Project Title: DIY Halal Recipes
+# Group 2 (DIY Halal Recipes)
 
 Website Name: Pecal's Cottage
 
