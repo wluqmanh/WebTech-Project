@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+  <title>Pecal's Cottage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/materia/bootstrap.min.css">
+  <link href="../lib/css/simple_Cart.css" rel="stylesheet">
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Poppins&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="shop-edit.css"> -->
+</head>
+
+<body>
+  <header>
+    <a href="../../Home/home.html" class="title">
+      <h1>Pecal's Cottage</h1>
+    </a>
+
+    <svg>
+      <rect width="200" height="10" x="0" y="0">
+    </svg>
+    <br>
+
+    <nav>
+      <ul>
+        <li class="nav-bar"><a href="../../About/about.html">About</a></li>
+        <li class="nav-bar"><a href="shop.html">Shop |</a></li>
+        <li class="nav-bar"><a href="../../Register/Register.html">User |</a></li>
+        <li class="nav-bar"><a href="../../Recipes/Recipe.html">Recipes |</a></li>
+      </ul>
+    </nav>
+
+    <a href="../../Home/home.html">
+      <img id="logo" src="../../Home/logo.png" alt="Logo"></a>
+  </header>
+
+  <br><br><h2 style="color: black">&emsp;&emsp;&emsp;&emsp;SHOP</h2>
+  <p style="font-weight: normal;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Buy our stuff here!</p>
+
+  <!-- Menu -->
+  <div class="menu">
+    <div class="container">
+      <div class="row">
+        <!-- Menu and categories -->
+        <div class="col-md-9 search-grid">
+          <div class="product-container">
+            <!-- Menu List of items -->
+            <div class="menu-list">
+              <div class="panel panel-default" id="content1">
+                <div class="panel-heading"></div>
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="menu-item-container box-design">
+                        <div class="item-name">8-inch Knife</div>
+                        <img src="../8inchknife.jpg" alt="">
+                        <div><i class="veg-icon"></i></div>
+                        <div class="item-price-container">
+                          <div class="item-price">
+                            <i class="fa fa-dollar"></i>79
+                          </div>
+                          <div class="spacer"></div>
+                          <div class="add-button">
+                            <button class="btn btn-primary sc-add-to-cart" data-name="8-inch Knife" data-price="79" type="submit">ADD</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="menu-item-container box-design">
+                        <div class="item-name">Cookware Set</div>
+                        <img src="../cookware.jpg" alt="">
+                        <div><i class="fa fa-dot-circle-o veg-icon"></i></div>
+                        <div class="item-price-container">
+                          <div class="item-price">
+                            <i class="fa fa-dollar"></i>499
+                          </div>
+                          <div class="spacer"></div>
+                          <div class="add-button">
+                            <button class="btn btn-primary sc-add-to-cart" data-name="Cookware Set" data-price="499" type="submit">ADD</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="menu-item-container box-design">
+                        <div class="item-name">4 Container Set</div>
+                        <img src="../mealprep.jpg" alt="">
+                        <div><i class="fa fa-dot-circle-o veg-icon"></i></div>
+                        <div class="item-price-container">
+                          <div class="item-price">
+                            <i class="fa fa-dollar"></i>139
+                          </div>
+                          <div class="spacer"></div>
+                          <div class="add-button">
+                            <button class="btn btn-primary sc-add-to-cart" data-name="4 Container Set" data-price="139" type="submit">ADD</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="menu-item-container box-design">
+                        <div class="item-name">Cookbook: Tasty Recipes</div>
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/A1Pcz6GPIJL.jpg" alt="">
+                        <div><i class="fa fa-dot-circle-o veg-icon"></i></div>
+                        <div class="item-price-container">
+                          <div class="item-price">
+                            <i class="fa fa-dollar"></i>29
+                          </div>
+                          <div class="spacer"></div>
+                          <div class="add-button">
+                            <button class="btn btn-primary sc-add-to-cart" data-name="Cookbook: Tasty Recipes" data-price="29" type="submit">ADD</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="menu-item-container box-design">
+                        <div class="item-name">The Healthy Cookbook</div>
+                        <img src="https://m.media-amazon.com/images/I/61yno8vQuEL.jpg" alt="">
+                        <div><i class="fa fa-dot-circle-o veg-icon"></i></div>
+                        <div class="item-price-container">
+                          <div class="item-price">
+                            <i class="fa fa-dollar"></i>39
+                          </div>
+                          <div class="spacer"></div>
+                          <div class="add-button">
+                            <button class="btn btn-primary sc-add-to-cart" data-name="The Healthy Cookbook" data-price="39" type="submit">ADD</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- //Menu List of items -->
+          </div>
+        </div>
+        <!-- //Menu and categories -->
+        <!-- Cart Grid -->
+        <div class="col-md-3">
+          <div id="cart"></div>
+        </div>
+        <!-- //Cart Grid -->
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-left">
+      <br>Follow Us<br>
+      <a href="https://www.instagram.com/pecals.cottage/"><img class="socials" src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c521.png" alt="Instagram"></a>
+      <a href="https://www.facebook.com/Pecals-Cottage-100433592021136"><img class="socials" src="https://assets.stickpng.com/thumbs/584ac2d03ac3a570f94a666d.png" alt="Facebook"></a>
+      <a href="https://twitter.com/PecalsCottage"><img class="socials" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" alt="Twitter"></a>
+    </div>
+    <div class="footer-right">
+      <br>
+      <form class="subscribe-box" action="#" method="post">
+        <input type="text" name="search" placeholder="Enter your email"><br>
+        <button type="submit" name="button">Subscribe</button>
+      </form>
+    </div>
+    <br>
+  </footer>
+
+  <!-- //Menu-->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+  <script src="../lib/js/jQuery.SimpleCart.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#cart').simpleCart();
+    });
+  </script>
+
+</body>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</html>
