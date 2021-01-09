@@ -31,9 +31,27 @@ input {
 
 header {
   background-color: #222020;
-  padding-bottom: 20px;
+  padding-bottom: 80px;
+}
+.header-right {
+  width: 15%;
+  float: right;
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-top: 50px;
 }
 
+.logout_p {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+#logout {
+  width: 40px;
+  height: 40px;
+}
 footer {
   background-color: #222020;
   color: white;
