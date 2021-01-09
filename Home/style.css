@@ -76,6 +76,37 @@ header h1 {
   text-shadow: -1px 1px 2px #000, 1px 1px 2px #000, 1px -1px 0 #000, -1px -1px 0 #000;
 }
 
+.banner {
+  text-align: center;
+  margin: 0 auto;
+  text-shadow: -1px 1px 2px #3a3b3c, 1px 1px 2px #3a3b3c, 1px -1px 0 #3a3b3c, -1px -1px 0 #3a3b3c;
+}
+
+.banner h1 {font-size: 45px}
+
+.banner button {
+  padding-top: 5px;
+  padding-right: 20px;
+  padding-bottom: 7px;
+  padding-left: 20px;
+  font-size: 35px;
+  background-color: #B61313;
+  color: white;
+  border-radius: 12px;
+  width: 120px;
+  text-shadow: -1px 1px 2px #000, 1px 1px 2px #000, 1px -1px 0 #000, -1px -1px 0 #000;
+}
+
+.banner svg {
+  fill: #3a3b3c;
+  stroke: rgb(0, 0, 0);
+  stroke-width: 1;
+  width: 800px;
+  height: 2px;
+  /* float: right; */
+  /* margin-right: 80px; */
+}
+
 h2, h3, p {
   color: #222020;
 }
@@ -148,9 +179,10 @@ main button {
 
 .main-right {
   float: right;
-  width: 39%;
+  width: 29%;
   text-align: center;
   padding-top: 80px;
+  margin-right: 100px;
 }
 
 #cookbook-pic {
