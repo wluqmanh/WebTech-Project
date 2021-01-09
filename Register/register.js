@@ -7,14 +7,16 @@
     promise.catch(e => alert(e.messages));
 
     alert("Your account has been registered successfully");
-    window.location.href = "Login.html";
+    setTimeout(function redirects(){window.location.href = "../Register/Login.html"; }, 2000);
+  }
 
+  function signOut(){
 
+    auth.signOut();
+    alert("Signed Out");
   }
 
 function checkpass(){
-
-
 
   var get_elem = document.getElementById,
   pass1 = document.getElementById('password'),
@@ -42,7 +44,7 @@ function checkpass(){
     alert("Your re-enter password does not same");
     return;
   }
-/*call function*/
+
   if(pass){
     SignUp();
   }
