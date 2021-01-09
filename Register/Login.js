@@ -23,7 +23,7 @@ auth.onAuthStateChanged(function(user){
 
 			var email = user.email;
 			alert("Active User " + email);
-      window.location.href = "Home.html";
+      window.location.href = "../Home/Home.html";
 
 
 
