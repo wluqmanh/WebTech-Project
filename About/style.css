@@ -82,11 +82,6 @@ footer {
   margin-top: 500px;
 }
 
-.search-bar {
-  padding-top: 30px;
-  text-align: center;
-}
-
 main input {
   background-color: #B61313;
   border: none;
@@ -98,21 +93,28 @@ main input {
   padding-bottom: 5px;
 }
 
-main button {
-  background-color: #B61313;
-  border-radius: 50%;
-  color: white;
-  border: none;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  /* margin: 4px 2px; */
+
+/* About */
+
+#about{
+  float: left;
+  width: 350px;
+  height: 350px;
 }
+
+#about_brief{
+  line-height: 2;
+  word-spacing: 20%;
+  text-align: left;
+}
+
+/* Contact Us */
 
 fieldset{
   background-color: #e1e1e1;
+  width: 100%;
+  position: center;
+  padding: 0px;
 }
 
 
@@ -174,6 +176,7 @@ form {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  color: white;
 }
 
 .submitform:hover{
@@ -181,6 +184,44 @@ form {
   color: white;
 }
 
+/* Meet Team */
+
+.column {
+  float: left;
+  width: 15%;
+  margin-bottom: 16px;
+  padding: 27px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 10px;
+}
+
+.title_team{
+  color: grey;
+}
+
+.button {
+  background-color: #B61313;
+  border-radius: 20%;
+  color: white;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  /* margin: 4px 2px; */
+}
+
+/* footer */
 
 footer {
   padding-bottom: 80px;
